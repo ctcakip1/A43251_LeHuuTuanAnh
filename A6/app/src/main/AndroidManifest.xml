@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".OrderFood.OrderStatus"
+            android:exported="false" />
+        <activity
+            android:name=".OrderFood.Cart"
+            android:exported="false" />
+        <activity
+            android:name=".tuan5.Demo5MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderFood.FoodDetail"
+            android:exported="false" />
+        <activity
+            android:name=".OrderFood.FoodList"
+            android:exported="true" />
+        <activity
+            android:name=".OrderFood.Home"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".OrderFood.SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".OrderFood.Signin"
+            android:exported="true" />
+        <activity
+            android:name=".OrderFood.SignIn_Out"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tuan4.T4ac1MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tuan3.T3ac3MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tuan3.T3ac2MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tuan3.T3ac1MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CodeLaiTuan2.CLT2ac2MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name=".CodeLaiTuan2.CLT2ac1MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tuan2.T2ac4MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tuan2.T2ac3MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".tuan2.T2ac2MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".tuan2.T2ac1MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".tuan1.T12MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".tuan1.T1MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
